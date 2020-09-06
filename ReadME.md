@@ -6,14 +6,14 @@
 ```javascript
     //bad
     [1, 2, 3].map(function(x)){
-    const y = x + 1;
-    return x*y
+      const y = x + 1;
+      return x*y
     });
 
     //good
     [1, 2, 3].map(x) => {
-    const y = x + 1;
-    return x * y
+      const y = x + 1;
+      return x * y
     });
  ```
 ##### __2. Используйте шаблонные строки вместо конкатенации.__
@@ -21,12 +21,12 @@
 ```javascript
     //bad
     function sayHi(name){
-    return 'How are you, ' + name + '?';
+      return 'How are you, ' + name + '?';
     };
 
     //good
     function sayHi(name){
-    return `How are you, ${name}?`;
+      return `How are you, ${name}?`;
     }; 
  ```
 ##### __3. Не используйте line continuations для длинных строк.__
@@ -35,15 +35,15 @@ Google рекомендует объединять более длинные с�
 ```javascript
     //bad
     const longString = 'This is a very lot of string that \
-    far exceeds  the 80 column limit. It unfortunately \
-    contains long stretches of spaces due  to how the \
-    continued lines are indented.';
+      far exceeds  the 80 column limit. It unfortunately \
+      contains long stretches of spaces due  to how the \
+      continued lines are indented.';
 
     //good
     const longString = 'This is a very lot of string that ' +
-    'far exceeds  the 80 column limit. It does not contain ' +
-    'long stretches of spaces since the concatenated' +
-    'strings are cleaner';
+      'far exceeds  the 80 column limit. It does not contain ' +
+      'long stretches of spaces since the concatenated' +
+      'strings are cleaner';
  ```
 ##### __4. Используйте одинарные кавычки, а не двойные__
 >##### Обычные строковые литералы разделяются одинарными кавычками (‘), а не двойными (“).
