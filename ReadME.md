@@ -107,14 +107,14 @@ Google рекомендует объединять более длинные с�
 ```javascript
     //bad
     {
-        tiny:    42,
-        longer:  435,
+      tiny:    42,
+      longer:  435,
     }
 
     //good
     {
-        tiny: 42,
-        longer: 435,
+      tiny: 42,
+      longer: 435,
     }
 ```
 ##### __10. Используйте пробелы вместо табуляции__
@@ -122,11 +122,11 @@ Google рекомендует объединять более длинные с�
 ```javascript
    //bad
    function foo(){
-       let name;
+     let name;
    }
    //bad
    function foo(){
-    let name;
+     let name;
    }
     //good :)
    function foo(){
